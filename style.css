@@ -215,7 +215,7 @@ nav ul li:hover a{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:13rem 8rem;
+    padding:10rem 8rem;
     text-align: center;
 
 }
@@ -268,7 +268,7 @@ nav ul li:hover a{
 }
 
 .option{
-    width:calc(90% / 3);
+    width:calc(75% / 3);
     
     
     cursor:pointer;
@@ -290,7 +290,7 @@ nav ul li:hover a{
 
 .option img{
     width:100%;
-    height:28.13rem;
+    height:21.13rem;
     border-radius:10px;
     transform:scale(0.9);
     transition: all 0.5s;
