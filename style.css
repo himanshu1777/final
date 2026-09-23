@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+.container{
+    transition: all 0.5s;
+}
+
+
+/* p{
+    margin:0;
+} */
+
+html{
+    font-size:16px;
+}
+
+.pd{
+    padding:2.5rem 6.5rem;
+}
+
+.heading h1{
+    text-align:center;
+    padding:1rem 0;
+    font-size:5rem;
+    text-decoration: underline;
+    
+}
+
+.bg-image{
+    background-image: url('about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* HEADER SECTION  START */
+
+
+header{
+    display:flex;
+    width:100%;
+    background:linear-gradient(to right, rgb(210, 208, 208) 10%, green 100%);
+    position: relative;
+    z-index:100;
+}
+
+.logo{
+    width:30%;
+    display:flex;
+    align-items: center;
+    
+}
+
+.logo img{
+    width:6rem;
+}
+
+.logo h1{
+    margin-left:20px;
+    font-size:3.13rem;
+}
+
+
+nav{
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap:16px;
+}
+
+nav ul li{
+    list-style-type: none;
+    cursor:pointer;
+    padding:1.5rem 0;
+    overflow: hidden;
+    margin-right:1rem;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:2rem;
+    font-weight:bold;  
+    position:relative;
+   
+    
+}
+
+nav ul li a::before{
+    content:" ";
+    position: absolute;
+    width:100%;
+    height:0.5rem;
+    border-radius:10px;
+    background: #FFA500;
+    bottom:-30%;
+    left:-100%;
+    transition: all 0.5s;
+
+}
+
+nav ul li:hover a::before{
+    left:0;
+}
+
+nav ul li:hover a{
+    color:rgb(216, 216, 216);
+}
+
+.login{
+    padding:0.95rem 1.57rem;
+    background:#FFA500;
+    border-radius:10px;
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+
+.login:hover{
+    color:#FFA500;
+    background:white;
+}
+
+
+/* HEADER SECTION END */
+
+
+/* HERO SECTION START  */
+
+.mainPage{
+    width:100%;
+    text-align: center;
+}
+
+.mainPage img{
+    width:80%;
+    max-width:80%;
+    height:53.13rem;
+}
+
+.intro{
+    width:100%;
+    padding-top:1rem;
+}
+
+.intro h1{
+    font-size: 5rem;
+}
+
+.intro p{
+    margin-top:1rem;
+    font-size: 4rem;
+    font-weight:400;
+    color:green;
+}
+
+#book{
+    margin-top:2rem;
+    padding:2rem 5rem;
+    font-size:1.57rem;
+    font-weight:bold;
+    border-radius:10px;
+
+    border:none;
+    outline:1px solid rgb(13, 82, 24);
+    color:white;
+    background:green;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+
+#book:hover{
+    color:green;
+    background:white;
+    border-color:green;
+}
+
+/* HERO SECTION END */
+
+
+
+/* 'HOW IT'S WORKS' SECTION START */
+
+
+
+
+
+.icon{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:13rem 8rem;
+    text-align: center;
+
+}
+
+.child{
+    flex:1;
+}
+
+
+
+.icon img{
+    width:15rem;
+}
+
+.icon p{
+    margin-top:1rem;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.hiw-intro h2{
+    padding:1rem 0;
+    font-size:4rem;
+}
+
+
+.hiw-intro ol li{
+    font-size:3rem;
+    line-height: 6rem;
+    /* list-style-position: inside; */
+    font-weight:500;
+    margin-left:5rem;
+}
+
+
+/* 'HOW IT'S WORK' SECTION END */
+
+/* 'OUR SERVICES' SECTION START */
+
+
+
+.optionContainer{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:5rem;
+    
+}
+
+.option{
+    width:calc(90% / 3);
+    
+    
+    cursor:pointer;
+    background-color: rgb(165, 162, 162);
+    border:5px solid rgb(165, 162, 162);
+    padding:1.5rem;
+    border-radius:10px;
+}
+
+.option:hover{
+    background-color:white;
+    
+}
+
+.option:hover p{
+    color:rgb(29, 181, 70);
+}
+
+.option img{
+    width:100%;
+    height:28.13rem;
+}
+
+.option p{
+    font-size:2rem;
+    padding:1rem 0;
+    font-weight:bold;
+}
+
+
+/* 'SERVICES' SECTION END */
+
+/* 'ABOUT US' SECTION START */
+
+.aboutus p{
+    font-size:3rem;
+    line-height:5rem;
+    text-align: justify ;
+}
+
+.service-intro{
+    padding:2rem 0;
+}
+
+.service-intro h2{
+    font-size:4rem;
+    text-decoration: underline;
+}
+
+.service-intro li{
+    /* list-style-position: inside; */
+    font-size:2.5rem;
+    padding:1rem 0;
+    margin-left:2rem;
+}
+
+/* 'ABOUT US' SECTION END */
+
+/* 'CUSTOMER CARE' SECTION START */
+
+.customercare{
+    background:#F5F5DC;
+}
+.customercare h1{
+    color:#6E5F3C;
+}
+
+.customercare p{
+    color:#805F3C;
+}
+
+.customercare h2{
+    color:#805F3C;
+    font-size:3rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.contact-area{
+    padding:3rem 0;
+    display:flex;
+    gap:15px;
+}
+
+.contact{
+    flex:1 1;
+}
+
+.map{
+    flex:1 1;
+}
+
+.map iframe{
+    width:100%;
+    height:100%;
+}
+
+.contact h3{
+    color:#805F3C;
+    font-size:4rem;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom:4rem;
+}
+
+.contact p{
+    font-size:3rem;
+    margin-bottom:2rem;
+    font-weight:bold;
+}
+
+/* 'CUSTOMER CARE' SECTION END */
+
+.summary{
+    display:flex;
+    gap:3.13rem;
+    font-weight:bold;
+    color:rgb(216, 216, 216);
+    background:#1C1C1C;
+    padding-top:5rem;
+}
+
+.last{
+    flex:1;
+}
+
+.last h1{
+    font-size: 5rem;
+    position: relative;
+    margin-bottom:2rem;
+}
+
+.last h1::after{
+    content:" ";
+    width:15rem;
+    height:0.65rem;
+    position: absolute;
+    bottom:-1px;
+    left:0;
+    border-radius: 10px;
+    background-color: red;
+}
+
+
+.last-logo{
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+
+.last-logo img{
+    width:10rem;
+}
+
+.last-logo h2{
+    font-size:4rem;
+    font-weight: bold;
+}
+
+.last-about p{
+    font-size:3rem;
+    text-align: justify;
+    line-height:4.5rem;
+}
+
+
+.links{
+    display:flex;
+}
+
+.link-1,.link-2{
+    flex:1;
+}
+
+.links li{
+    list-style-type: none;
+    font-size:2.5rem;
+    margin-bottom:2rem;
+}
+
+.links li a{
+    text-decoration: none;
+    color:rgb(179, 175, 175);
+    transition: all 0.5s;
+}
+
+.links li a:hover{
+    color:white;
+}
+
+.last-contact p{
+    font-size:3rem;
+    margin-bottom:3rem;
+}
+
+.last-contact a{
+    text-decoration: none;
+    color:rgb(216, 216, 216);
+}
+
+
+/* SECTION 'SUMMARY' END */
+
+
+/* FOOTER SECTION START */
+
+footer{
+    font-size:2.5rem;
+    font-weight:bold;
+    color:white;
+    background:#111111;
+    text-align: center;
+    padding:2rem 0;
+}
+
+/* FOOTER SECTION END */
+
+
+
+
+/* FOR BARS SECTION START */
+
+.bar{
+    font-size:4rem;
+    transition: all 0.5s;
+    display:none;
+}
+
+.bar:hover{
+    color:white;
+}
+
+
+.bars-option{
+    position:absolute;
+    width:100%;
+    top:-1000%;  
+    left:0;
+    background-image:linear-gradient(to right, rgb(210, 208, 208) 10%, green 100%); 
+    transition: all 0.8s;
+    z-index:-1;
+    opacity: 0;
+}
+
+
+.bars-cross{
+    
+    top:100%;
+    opacity:1;
+   
+}
+
+.bars-option li {
+    list-style-type: none;
+    margin-bottom:2rem;
+}
+
+.bars-option li:hover a{
+    color:rgb(75, 73, 73);
+}
+
+.bars-option li a {
+    text-decoration: none;
+    color:black;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+
+
+.bar-login{
+    width:50%;
+    text-align:center;
+}
+
+
+
+
+
+
+/* FOR LOGIN AND BOOKING POPUP */
+
+
+#loginModal{
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+    cursor:pointer;
+}
+
+#loginModal h2{
+    font-size:4rem;
+    text-align: left;
+    padding-bottom:10px;
+    border-bottom: 2px solid rgb(119, 118, 118);
+}
+
+#closeModalBtn{
+    position: absolute; 
+    right:20px;
+    top:5%;
+    cursor: pointer;
+    font-size: 4rem;
+    background: rgb(219, 73, 73);
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:5rem;
+    width:5rem;
+    text-align: center;
+    border-radius:50px;
+    transition: all 0.5s;
+}
+
+#closeModalBtn:hover{
+    color:red;
+    background:white;
+}
+
+
+
+#toggleModeBtn{
+    color: #00a884; 
+    font-weight: bold;
+}
+
+#pop-container{
+    background: white; 
+    padding: 2rem; 
+    width: 30%; 
+    margin: 15rem auto; 
+    position: relative;
+    border-radius:20px;
+
+}
+
+#modalLoginForm input{
+    padding:1rem;
+    width:100%;
+    margin-top:20px;
+    font-size:2rem;
+    border:0.1rem solid rgb(100, 98, 98);
+}
+
+#modalLoginForm{
+    text-align:center;
+    
+}
+
+#pop-container p{
+    font-size:2rem;
+}
+
+#Btn{
+    
+    border-radius:10px;
+    padding:1rem 2rem;
+    margin:1rem 0;
+    border:none;
+    color:white;
+    background:rgb(1, 155, 53);
+    cursor:pointer;
+    transition: all 0.5s;
+    font-size:2rem;
+
+}
+
+
+#Btn:hover{
+    color:rgb(1, 155, 53);
+    background:white;
+}
+
+
+
+
+/* FOR BOOKING POPUP */
+
+.book-container{
+                width:100%;
+                min-height: 100vh;
+                background:rgba(199, 201, 199,0.5);
+                display:none;
+                position: fixed;
+                top:0;
+                left:0;
+                cursor:pointer;
+               
+            }
+
+            .booking{
+
+                width:40%;
+                background:rgb(78, 180, 81);
+                color: rgb(46, 44, 44);
+                padding:3rem;
+                border-radius:10px;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .booking h2{
+                font-size:3rem;
+                margin-bottom:2rem;
+                border-bottom:0.4rem solid black;
+                border-radius: 5px;
+            }
+
+            .booking label{
+                font-size:2rem;
+            }
+
+            .book-form{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:2rem;
+                color:rgb(25, 21, 26);
+                font-weight: bold;
+            }
+            
+            
+
+            .book-form div input,textarea{
+                margin-top:1.5rem;
+                font-size:2rem;
+                padding:5px;
+                border-radius:5px;
+                border:none;
+                outline:none;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+
+
+            .date-time{
+                display:flex;
+                flex-wrap: wrap;
+                width:100%;
+                border:2px solid black;
+                padding:1rem;
+                border-radius:10px;
+                gap:2rem;
+                
+            }
+
+            .date-time div{
+                flex:1;
+            }
+
+            #da{
+                border-right:2px solid black;
+            }
+
+        
+
+            #tow,textarea{
+                width:100%;
+                padding:10px 5px;
+            }
+
+            #book-submit{
+                text-align:center;
+                margin-top:20px;
+            }
+
+            #book-submit input{
+                padding:2rem 5rem;
+                cursor:pointer;
+                color:white;
+                background:green;
+                border-radius:10px;
+                transition: all .5s;
+            }
+
+            #book-submit input:hover{
+                color:green;
+                background:white;
+            }
