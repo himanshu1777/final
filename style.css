@@ -20,6 +20,7 @@
 
 html{
     font-size:16px;
+    scroll-behavior: smooth;
 }
 
 .pd{
@@ -177,7 +178,7 @@ nav ul li:hover a{
 #book{
     margin-top:2rem;
     padding:2rem 5rem;
-    font-size:1.57rem;
+    font-size:2rem;
     font-weight:bold;
     border-radius:10px;
 
@@ -266,10 +267,11 @@ nav ul li:hover a{
     
     
     cursor:pointer;
-    background-color: rgb(165, 162, 162);
-    border:5px solid rgb(165, 162, 162);
+    background-color: #F5F5DC;
+    border:5px solid #F5F5DC;
     padding:1.5rem;
     border-radius:10px;
+    transition:all 0.5s;
 }
 
 .option:hover{
@@ -284,6 +286,13 @@ nav ul li:hover a{
 .option img{
     width:100%;
     height:28.13rem;
+    border-radius:10px;
+    transform:scale(0.9);
+    transition: all 0.5s;
+}
+
+.option:hover img {
+    transform:scale(1);
 }
 
 .option p{
@@ -628,7 +637,7 @@ footer{
     border-radius:10px;
     padding:1rem 2rem;
     margin:1rem 0;
-    border:none;
+    border:2px solid rgb(1, 155, 53);
     color:white;
     background:rgb(1, 155, 53);
     cursor:pointer;

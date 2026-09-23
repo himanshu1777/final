@@ -29,6 +29,10 @@ bar.addEventListener('click',()=>{
 });
 
 
+// window.addEventListener('click',(e)=>{
+//     console.log(e.target.parentElement)
+// })
+
 
 
 
@@ -104,24 +108,36 @@ bar.addEventListener('click',()=>{
 
   const modal = document.getElementById('loginModal');
   const openBtn = document.getElementById('btn');
+  const openBarBtn = document.getElementById('bar-btn');
   const closeBtn = document.getElementById('closeModalBtn');
 
-  // Open modal
+
+
+    // Open modal
   openBtn.onclick = () => modal.style.display = 'block';
 
-  // Close modal
+  openBarBtn.onclick = () =>{
+
+    modal.style.display = 'block';
+    bar.classList.remove('fa-xmark');
+    barOption.classList.remove('bars-cross');
+    bar.classList.add('fa-bars');
+
+  } 
+ 
+  
+
+   // Close modal
   closeBtn.onclick = () => modal.style.display = 'none';
 
   // Close modal if user clicks outside box
 
   window.addEventListener('click',(e)=>{
-         if (e.target === modal){
+        if (e.target === modal){
         modal.style.display = 'none';
         modal.style.cursor = 'pointer';
     }
   })
-
-
 
 
 
@@ -229,7 +245,7 @@ toggleModeBtn.addEventListener('click',(e)=>{
 
         book.addEventListener('click',showBooking);
 
-    })
+    });
 
     function showBooking(e){
 
@@ -307,3 +323,24 @@ toggleModeBtn.addEventListener('click',(e)=>{
             bookSubmit.value= 'Book';
         }
     }
+
+
+
+
+    // FOR CLOSING OPTION-BARS 
+
+    const loginbar = document.querySelector('.bar-login');
+
+    const anchor = document.querySelectorAll('.bars-option li a')
+    
+
+    anchor.forEach((a)=>{
+
+        a.addEventListener('click',()=>{
+            bar.classList.remove('fa-xmark');
+            barOption.classList.remove('bars-cross');
+            bar.classList.add('fa-bars');
+        });
+    })
+
+    
