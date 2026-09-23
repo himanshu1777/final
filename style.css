@@ -25,6 +25,7 @@ html{
 
 .pd{
     padding:2.5rem 6.5rem;
+    scroll-margin-top: 10rem;
 }
 
 .heading h1{
@@ -52,6 +53,10 @@ header{
     background:linear-gradient(to right, rgb(210, 208, 208) 10%, green 100%);
     position: relative;
     z-index:100;
+    padding:1rem 6.5rem;
+    position: sticky;
+    top:0;
+    
 }
 
 .logo{
@@ -62,7 +67,7 @@ header{
 }
 
 .logo img{
-    width:6rem;
+    width:10rem;
 }
 
 .logo h1{
