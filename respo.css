@@ -179,6 +179,10 @@ html{
         width:calc(90% / 1);
     } 
 
+    .option img{
+        height:35rem;
+    }
+
 
 
     .contact-area{
