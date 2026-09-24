@@ -677,12 +677,15 @@ footer{
             .booking{
 
                 width:40%;
-                background:rgb(78, 180, 81);
+                background:url('about.png');
+                background-position: center;
+                background-size:cover;
+                background-repeat: no-repeat;
                 color: rgb(46, 44, 44);
                 padding:3rem;
                 border-radius:10px;
                 position: absolute;
-                top:50%;
+                top:55%;
                 left:50%;
                 transform: translate(-50%,-50%);
             }
@@ -734,6 +737,11 @@ footer{
 
             .date-time div{
                 flex:1;
+                
+            }
+
+            .date-time div input{
+                border:1px solid
             }
 
             #da{
@@ -745,6 +753,8 @@ footer{
             #tow,textarea{
                 width:100%;
                 padding:10px 5px;
+                border:1px solid black;
+                font-size:2rem;
             }
 
             #book-submit{
@@ -759,6 +769,7 @@ footer{
                 background:green;
                 border-radius:10px;
                 transition: all .5s;
+                border:1px solid green;
             }
 
             #book-submit input:hover{
